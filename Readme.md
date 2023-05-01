@@ -12,3 +12,10 @@ Game will function basically as hangman where the user will guess the letters un
 
 - Function that the program will randomly select from a list of words provided and will display the amount of letters in underscores " _ "
 
+02/05/2023
+
+- Still triying to figure out the requirements text document and how to auto generate it. 
+- Imported the Random function into the main game and implemented into program so game will choose random word from listed options. 
+- At the moment only have number of guesses for user list down as a number. Want to implement graphics like hangman where it will show each portion of the hangman as the user guesses the incorrect letter. 
+- 
+

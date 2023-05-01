@@ -1,7 +1,7 @@
 # Check if python is installed 
-python3 -m venv venv.venv
+python3 -m .venv
 
 # Check if venv already exists
-source WORD_GUESSING/venv.venv/bin/activate
+source /bin/activate
 pip3 install -r requirements.txt
 python3 hangman.py
