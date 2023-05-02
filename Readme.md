@@ -17,5 +17,13 @@ Game will function basically as hangman where the user will guess the letters un
 - Still triying to figure out the requirements text document and how to auto generate it. 
 - Imported the Random function into the main game and implemented into program so game will choose random word from listed options. 
 - At the moment only have number of guesses for user list down as a number. Want to implement graphics like hangman where it will show each portion of the hangman as the user guesses the incorrect letter. 
-- 
+
+03/05/2023
+
+- Completed graphical out to indicate the guesses left for the user 
+- explained the partial_answer value and how it will assist the user in understanding what was guessed correctly
+- Created Print actions that will indicate to the user the following 
+    - Print the Graphic of Hangman for guesses left
+    - Print the partial_solution for user to see what was guessed correctly 
+    - Print the wrong_guesses for the user
 

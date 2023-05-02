@@ -14,5 +14,14 @@ mystery_word = random.choice(mystery_words)
 wrong_guesses = []
 
 partial_answer = "_" * len(wrong_guesses)
+# Needed to assign function that will generate word as partially answered when user guesses correct letters
 
-while len(wrong_guesses)
+print(data.guesses[len(wrong_guesses)])
+print(f"Word: {partial_answer}")
+# Print actions to make sure that the user is aware of what was guessed correctly and if they can surmise what the word is
+
+while len(wrong_guesses) < len(data.guesses) - 1 and partial_solutions ! = mystery_word:
+    c = input("Your Guess:  ").upper()
+    # accepting the user input
+    if c in mystery_word:
+        
