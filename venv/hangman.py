@@ -18,10 +18,17 @@ partial_answer = "_" * len(wrong_guesses)
 
 print(data.guesses[len(wrong_guesses)])
 print(f"Word: {partial_answer}")
-# Print actions to make sure that the user is aware of what was guessed correctly and if they can surmise what the word is
+# Printing shows the mystery word. Partial answer will be ashown in the amount od "_" for the user to guess
 
 while len(wrong_guesses) < len(data.guesses) - 1 and partial_solutions ! = mystery_word:
+    # Creating a while loop that will continue to run as long as there are chaces available to the user
     c = input("Your Guess:  ").upper()
-    # accepting the user input
+    # accepting the user input and converting it into Uppercase
     if c in mystery_word:
-        
+        for i, x in enumerate(mystery_word):
+            if x == c:
+                partial_answer = partial_answer[:i] + c + partial_answer[i+1:]
+            else:
+                wrong_guesses.append(c)
+                # else to make sure that wrong guess attemps are recorded and will update the hangman graphic
+            print(data.guesses{len(wrong_guesses)})
