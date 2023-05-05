@@ -32,3 +32,13 @@ while len(wrong_guesses) < len(data.guesses) - 1 and partial_solutions ! = myste
                 wrong_guesses.append(c)
                 # else to make sure that wrong guess attemps are recorded and will update the hangman graphic
             print(data.guesses{len(wrong_guesses)})
+            print(f"Mystery Word: {partial_answer}, Wrong Guesses: {', '.join(wrong_guesses)} ")
+            # printing the guess attempts and the mystery word
+    
+    # If function for when the mystery word letters have been guessed correctly it will display victory message
+    if mystery_word == partial_answer:
+        print("You have won!!! Congratulations!")
+        
+    else:
+        print(f"You have lost...The Mystery word was: {mystery_word}")
+    # else added for when the hangman graphic has been completed and the user has run out of attempts. Message will pop up telling the user that they have lost and what the mystery word was.

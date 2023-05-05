@@ -27,3 +27,7 @@ Game will function basically as hangman where the user will guess the letters un
     - Print the partial_solution for user to see what was guessed correctly 
     - Print the wrong_guesses for the user
 
+04/05/23 - 05/05/2023
+
+- Completed a rough idea of how the game will end and how the solutions will be printed out. 
+- completed the print functions for the mystery word and the hangman grapic indicating the guesses left. 
