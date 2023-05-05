@@ -31,3 +31,6 @@ Game will function basically as hangman where the user will guess the letters un
 
 - Completed a rough idea of how the game will end and how the solutions will be printed out. 
 - completed the print functions for the mystery word and the hangman grapic indicating the guesses left. 
+
+6/05/23
+- completed some additional testing and still need to fix visual output
