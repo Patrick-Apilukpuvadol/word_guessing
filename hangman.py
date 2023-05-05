@@ -7,7 +7,7 @@ from colored import fg, bg, attr
 
 # list of words available to the program to select when user runs the game (Need to add randomisation)
 # Need to check if only single word options work or 2 words work aswell. Will try
-mystery_words = ["PYTHON", "JAVASCRIPT", "INTEGERS", "STRING", "ENCYCLOPEDIA"]
+mystery_words = ["PYTHON", "JAVASCRIPT", "INTEGERS", "STRING", "ENCYCLOPEDIA", "PROGRAMMING", "SOFTWARE"]
 # adding random function so program selects word randomly when user plays game
 mystery_word = random.choice(mystery_words)
 
