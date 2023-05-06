@@ -13,7 +13,6 @@ while replay:
     mystery_words = ["PYTHON", "JAVASCRIPT", "INTEGERS", "STRING", "ENCYCLOPEDIA", "PROGRAMMING", "SOFTWARE"]
     # adding random function so program selects word randomly when user plays game
     mystery_word = random.choice(mystery_words)
-
     wrong_guesses = []
 
     partial_answer = "_" * len(mystery_word)
@@ -42,10 +41,16 @@ while replay:
     # If function for when the mystery word letters have been guessed correctly it will display victory message
     if mystery_word == partial_answer:
         print(f"{fg(10)}You have won!!! Congratulations!{attr(0)} The Mystery word was: {fg(11)} {mystery_word}{attr(0)}")
+        save_name = input('Enter your name. ').title()
+        save_score = input('Enter the attempts you have left. ')
+
+        text_file = open("highscores.txt", "a")
+        text_file.write("\n" + save_name + ' has won 1 round with ' + save_score + ' attempts remaining' + "\n")
+        text_file.close()
         
     else:
         print(f"{fg(1)}You have lost...The Mystery word was: {attr(0)} {fg(11)}{mystery_word}{attr(0)}")
-        
+    
     # else added for when the hangman graphic has been completed and the user has run out of attempts. Message will pop up telling the user that they have lost and what the mystery word was.
     again = input('Would you like to play again? (y/n) ')
 
