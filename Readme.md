@@ -47,3 +47,5 @@ Game will function basically as hangman where the user will guess the letters un
 - Added some indication of attempts left to improve user visibility of how many chances they have left
 - Added and fixed some colour importat issues in the code
 - Working on adding some replayability to the game
+
+- Added some replayability in the game by using a Nested loop within the progam so that the user can choose to either play or end the program
