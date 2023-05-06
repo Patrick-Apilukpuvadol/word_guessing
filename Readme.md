@@ -51,3 +51,7 @@ Game will function basically as hangman where the user will guess the letters un
 - Added some replayability in the game by using a Nested loop within the progam so that the user can choose to either play or end the program
 
 - Added additional record keeping feature to keep track of users that have won a round of the game and how many attempts that they have left. 
+
+- Created some limitations of user input to ensure that user can use only letters in the game to prevent program errors so it is handled gracefully
+
+- Added requirements.txt document to the run executable file so that it updates with the modules used in the program. 

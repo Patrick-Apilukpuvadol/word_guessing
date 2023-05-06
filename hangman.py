@@ -3,7 +3,10 @@
 # importing the data sheet and random function
 import data
 import random
+import re
 from colored import fg, bg, attr
+import string
+
 
 replay = True
 while replay:
@@ -26,13 +29,24 @@ while replay:
         # Creating a while loop that will continue to run as long as there are chaces available to the user
         c = input("Please Guess a Letter:  ").upper()
         # accepting the user input and converting it into Uppercase
+        if len(c) == 1 and c.isalpha():
+            print(c)
+            
+        else:
+            print(f"{bg(196)}Please type in 1 letter at a time{attr(0)}")
+            continue
+            # trying to limit the characters that user can input to 1 letter
+            
         if c in mystery_word:
             for i, x in enumerate(mystery_word):
                 if x == c:
                     partial_answer = partial_answer[:i] + c + partial_answer[i+1:]
+                    
         else:
             if c not in wrong_guesses:
                 wrong_guesses.append(c)
+                
+        
             # else to make sure that wrong guess attemps are recorded and will update the hangman graphic
         print(data.guesses[len(wrong_guesses)])
         print(f"{fg(10)}Mystery Word: {partial_answer},{attr(0)} {fg(1)}Wrong Guesses: {', '.join(wrong_guesses)}{attr(0)} ")

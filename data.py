@@ -1,4 +1,6 @@
 # data sheet to keep score of guesses from the user
+from colored import fg, bg, attr
+
 guesses = r"""
 Attempts left 7
 +--
