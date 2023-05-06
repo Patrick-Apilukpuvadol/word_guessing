@@ -11,7 +11,6 @@ mystery_words = ["PYTHON", "JAVASCRIPT", "INTEGERS", "STRING", "ENCYCLOPEDIA", "
 # adding random function so program selects word randomly when user plays game
 mystery_word = random.choice(mystery_words)
 
-
 wrong_guesses = []
 
 partial_answer = "_" * len(mystery_word)
@@ -23,7 +22,7 @@ print(f"Word: {partial_answer}")
 
 while len(wrong_guesses) < len(data.guesses) - 1 and partial_answer != mystery_word:
     # Creating a while loop that will continue to run as long as there are chaces available to the user
-    c = input("Your Guess:  ").upper()
+    c = input("Please Guess a Letter:  ").upper()
     # accepting the user input and converting it into Uppercase
     if c in mystery_word:
         for i, x in enumerate(mystery_word):
@@ -42,5 +41,5 @@ if mystery_word == partial_answer:
     print(f"{fg(10)}You have won!!! Congratulations!{attr(0)} The Mystery word was: {fg(11)} {mystery_word}{attr(0)}")
         
 else:
-    print(f"{fg(1)}You have lost...The Mystery word was: {attr(0)} {fg(11)}{mystery_word}{attr(11)}")
+    print(f"{fg(1)}You have lost...The Mystery word was: {attr(0)} {fg(11)}{mystery_word}{attr(0)}")
 # else added for when the hangman graphic has been completed and the user has run out of attempts. Message will pop up telling the user that they have lost and what the mystery word was.

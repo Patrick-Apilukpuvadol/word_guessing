@@ -1,4 +1,12 @@
-Workding on the ideas for the interminal game and the functions to add to the project. 
+Working on the ideas for the interminal game and the functions to add to the project. Apologies for the lack of commits on this project. i have tried my best to reach the 20 commits but I was juggling this assignment with the Workbook assignment which took me a considerable amount of time. 
+
+
+
+Trello Board - Project Task Management
+
+https://trello.com/b/ZgM2Saxc
+
+
 
 Game will function basically as hangman where the user will guess the letters until they get the completed word
 
@@ -34,3 +42,8 @@ Game will function basically as hangman where the user will guess the letters un
 
 6/05/23
 - completed some additional testing and still need to fix visual output
+
+07/05/2023
+- Added some indication of attempts left to improve user visibility of how many chances they have left
+- Added and fixed some colour importat issues in the code
+- Working on adding some replayability to the game
