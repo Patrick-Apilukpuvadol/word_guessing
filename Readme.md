@@ -4,7 +4,7 @@ Working on the ideas for the interminal game and the functions to add to the pro
 
 # Youtube
 
-NEED to put link here
+https://youtu.be/mOn9qXO5vYU
 
 # GitHub
 
@@ -12,7 +12,9 @@ git@github.com:Patrick-Apilukpuvadol/word_guessing.git
 
 # Trello Board - Project Task Management
 
-https://trello.com/b/ZgM2Saxc
+https://trello.com/invite/b/ZgM2Saxc/ATTI9e9f4c855a6f3e70b87c8ee38a22443e9E0C8464/project-tasks
+
+https://trello.com/b/ZgM2Saxc/project-tasks
 
 # Introduction
 
@@ -35,6 +37,10 @@ With the features the in terminal program will have the following features
             input_incorrect(c)
             continue
             # trying to limit the characters that user can input to 1 letter
+
+def input_incorrect(c):
+    print(f"{bg(196)}Please type in 1 letter at a time{attr(0)}")
+    #Function to prompt user to input another guess within the program parameters
 ```
 
 In this feature I used the following code to take the user input and ensure that it is within the format that the program will accept. 
@@ -43,9 +49,9 @@ For this case the input needed to be a Letter and only 1 Letter at a time.
 
 Since all the mystery words were in caps I made sure that the user's input will be automatically converted to uppercase
 
-I also added if/else statement to make sure that the input was only 1 character and it was a letter fromt he alphabet. The Else portion was for the situation that the user inputs something invalid like a number or 2 letters by accident, the program will prompt the user to enter a single letter. 
+I also added if/else statement to make sure that the input was only 1 character and it was a letter from the alphabet. The Else portion was for the situation that the user inputs something invalid like a number or 2 letters by accident, the program will prompt the user to enter a single letter. 
 
-# Feature that generates random choice of word from list
+# Feature that Selects random choice of word from list
 
 ```python
 mystery_words = ["PYTHON", "JAVASCRIPT", "INTEGERS", "STRING", "ENCYCLOPEDIA", "PROGRAMMING", "SOFTWARE"]
