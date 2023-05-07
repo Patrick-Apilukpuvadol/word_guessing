@@ -146,7 +146,7 @@ For this Feature I wanted to add score keeping function that will prompt the use
 Once they have completed entering their details the data will be stored in the highscores.txt file. 
 
 
-# in-terminal graphics to make the game more responsive
+# In-terminal graphics to make the game more responsive
 
 ```python
 Attempts left 0
@@ -165,6 +165,9 @@ Within this file I list all the stages of the hangman that indicates the attempt
 
 I used the strip().split(\n\n") method to ensure that the each of the strings will be interpreted as intended.
 
+# Notes of progress
+
+29/04/23
 
 - Function where program takes user input and verifies if it matches with any letters in the word in the guess. Need to make sure that the letters coinside with the positioning relative to rest of the word. 
 
@@ -219,3 +222,6 @@ I used the strip().split(\n\n") method to ensure that the each of the strings wi
 - Added some functions to the program and defining the, 
 - created an additional functions page to import functions to reduce clutter in the main program. 
 - removed some test functions from the main program code to free up space. 
+- completed the readme file and amended some instructions to improve user experience
+- completed the presentation of project
+
