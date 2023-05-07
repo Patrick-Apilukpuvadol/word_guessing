@@ -1,5 +1,4 @@
 # data sheet to keep score of guesses from the user
-from colored import fg, bg, attr
 
 guesses = r"""
 Attempts left 7
@@ -59,4 +58,4 @@ Attempts left 0
 |
 
 """.strip().split("\n\n")
-# Added split strip function so that the data is interpreted as each stage as intended 
+# Added split strip method so that the data is interpreted as each stage as intended 

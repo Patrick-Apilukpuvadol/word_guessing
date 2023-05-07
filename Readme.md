@@ -148,7 +148,22 @@ Once they have completed entering their details the data will be stored in the h
 
 # in-terminal graphics to make the game more responsive
 
+```python
+Attempts left 0
++--,
+|  o
+| /|\
+| / \
+|
 
+""".strip().split("\n\n")
+```
+
+I added some graphics in the terminal by utilising a separate data python file. 
+
+Within this file I list all the stages of the hangman that indicates the attempts they have left.
+
+I used the strip().split(\n\n") method to ensure that the each of the strings will be interpreted as intended.
 
 
 - Function where program takes user input and verifies if it matches with any letters in the word in the guess. Need to make sure that the letters coinside with the positioning relative to rest of the word. 
