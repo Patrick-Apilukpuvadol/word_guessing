@@ -6,7 +6,7 @@ import random
 import re
 from colored import fg, bg, attr
 import string
-from functions import win_game, lose_game, user_input, input_incorrect, guess_right, guess_wrong
+from functions import win_game, lose_game, user_input, input_incorrect, guess_wrong
 
 def win_game(mystery_word, partial_answer):
     print(f"{fg(10)}You have won!!! Congratulations!{attr(0)} The Mystery word was: {fg(11)} {mystery_word}{attr(0)}")
