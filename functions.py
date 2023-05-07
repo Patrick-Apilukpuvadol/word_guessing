@@ -27,3 +27,12 @@ def input_incorrect(c):
 def guess_wrong(c, wrong_guesses):
     if c not in wrong_guesses:
         wrong_guesses.append(c)
+        
+def replay_game(again):
+    if again == 'n':
+        replay = False
+        
+        
+    else:
+        if again == 'y':
+            replay = True

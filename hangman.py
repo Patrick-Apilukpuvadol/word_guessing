@@ -6,7 +6,7 @@ import random
 import re
 from colored import fg, bg, attr
 import string
-from functions import win_game, lose_game, user_input, input_incorrect, guess_wrong
+from functions import win_game, lose_game, user_input, input_incorrect, guess_wrong, replay_game
 
 replay = True
 while replay:

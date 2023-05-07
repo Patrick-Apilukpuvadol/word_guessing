@@ -28,6 +28,11 @@
 
      `python3 hangman.py`
 
+1. You can also run the sh file which will install the required modules. 
+
+    `./run.sh`
+
+
 And you should have the game up and running! 
 
 I hope you enjoy playing it 
